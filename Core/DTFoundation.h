@@ -30,7 +30,6 @@
 
 // Categories
 #import "NSArray+DTError.h"
-#import "NSData+DTCrypto.h"
 #import "NSDictionary+DTError.h"
 #import "NSFileWrapper+DTCopying.h"
 #import "NSMutableArray+DTMoving.h"
