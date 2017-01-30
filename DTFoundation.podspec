@@ -2,18 +2,18 @@ Pod::Spec.new do |spec|
   spec.name         = 'DTFoundation'
   spec.version      = '1.7.11'
   spec.summary      = "Standard toolset classes and categories."
-  spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
+  spec.homepage     = "https://github.com/gauravmnit07/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@cocoanetics.com" }
   spec.documentation_url = 'http://docs.cocoanetics.com/DTFoundation'
   spec.social_media_url = 'https://twitter.com/cocoanetics'
-  spec.source       = { :git => "https://github.com/Cocoanetics/DTFoundation.git", :tag => spec.version.to_s }
-  
+  spec.source       = { :git => 'https://github.com/gauravmnit07/DTFoundation.git', :branch => 'develop' }
+
   spec.ios.deployment_target = '6.0'
   spec.tvos.deployment_target = '9.0'
   spec.osx.deployment_target = '10.6'
   spec.license      = 'BSD'
   spec.requires_arc = true
-  
+
   spec.subspec 'Core' do |ss|
     ss.ios.deployment_target = '4.3'
     ss.tvos.deployment_target = '9.0'
@@ -131,7 +131,7 @@ Pod::Spec.new do |spec|
     ss.dependency 'DTFoundation/Core'
     ss.source_files = 'Core/Source/DTScripting/*.{h,m}'
   end
-  
+
   spec.subspec 'DTAsyncFileDeleter' do |ss|
     ss.ios.deployment_target = '4.3'
     ss.osx.deployment_target = '10.6'
